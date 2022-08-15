@@ -1,0 +1,399 @@
+body {
+    font-family: 'Noto Sans CJK JP',sans-serif;
+    font-size: 14px;
+    line-height: 2.1;
+    letter-spacing: 0.05em;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style:none;
+}
+
+.wrapper {
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.sec-title {
+    font-family: 'Roboto';
+    font-weight:bold;
+    font-size: 36px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+header {
+    background-image: url(./img/fv-bgi@2x.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto';
+    position:relative;
+    margin-bottom: 100px;
+}
+
+.header  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 50px;
+}
+
+
+.header .site-title {
+    color:white;
+    font-size: 26px;
+}
+
+.header ul {
+    display: flex;
+
+}
+
+.header li {
+    margin-right: 55px;
+}
+
+.header li:last-child {
+    margin-right: 0;
+}
+
+.header a {
+    color: #fff;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.header a:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+header .title {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    position:absolute;
+    top:370px;
+    right:0;
+    left: 0;
+}
+
+header .title::after {
+    content:'';
+    width: 400px;
+    height: 2px;
+    background-color: #fff;
+    position:absolute;
+    bottom: 20px;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    
+}
+
+.hamburger {
+    display: none;
+}
+#about {
+    margin-bottom: 150px;
+}
+
+.title-text .title {
+    font-weight:bold;
+    font-size: 24px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.title-text .text {
+    font-weight:bold;
+}
+
+#service {
+    margin-bottom: 150px;
+}
+
+#service .contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+#service .content2 {
+    margin-bottom: 0;
+}
+
+#service .content1 img {
+    margin-right: 70px;
+}
+
+#service .content2 img{
+    margin-left: 70px;
+}
+
+#news {
+    margin-bottom:150px;
+
+}
+
+#news ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#news li {
+    width: 31%;
+    box-shadow: 0 0 6px #1B1310;
+}
+
+#news li img {
+    vertical-align: bottom;
+}
+
+#news .text {
+    padding:25px 34px;
+}
+
+#news li a {
+    color:#000;
+}
+
+#contact {
+    margin-bottom: 50px;
+    max-width: 700px;
+}
+
+#contact dl {
+    width: 100%;
+    margin-bottom: 50px;
+    font-family: 'Hiragino Kaku Gothic ProN';
+    line-height: 1;
+
+}
+
+#contact dt {
+    margin-bottom: 5px;
+}
+#contact dd {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#contact dd input,
+#contact dd textarea {
+    width: 100%;
+    border: solid 1px #141414;
+}
+
+#contact dd textarea {
+    height: 170px;
+}
+
+#contact .buttan input{
+    display: block;
+    font-size: 20px;
+    background-color: #000;
+    width: 235px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius:50px;
+    padding: 20px;
+    line-height: 1;
+    font-weight: bold;
+    box-shadow: 0 0 6px #1B1310;
+    color:#fff;
+    transition: 0.5s;
+}
+
+#contact .buttan input:hover{
+    background-color: #fff;
+    color:#000;
+    transition: 0.5s;
+}
+
+footer {
+    background-color: #1B1310;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    line-height: 1;
+
+}
+
+@media(max-width:900px) {
+
+    .wrapper {
+        padding: 0 15px;
+    }
+    header {
+        background-image: url(./img/fv-bgi_sp@2x.jpg);
+    }
+
+    .header {
+        padding: 0 15px;
+    }
+
+    .header .site-title {
+        font-size: 20px;
+    }
+    header .title {
+        font-size: 3rem;
+    }
+
+    header .title::after {
+        width: 300px;
+    }
+
+
+    .navi {
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        color: #fff;
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        z-index: 20;
+        padding: 50%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+
+    .navi.action {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    
+
+    .navi ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .header li {
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .hamburger {
+        width: 65px;
+        height: 75px;
+        display: block;
+        background-color:transparent;
+        cursor:pointer;
+        position:relative;
+        z-index: 20;
+    }
+
+    .hamburger span {
+        width: 40px;
+        height: 3px;
+        background-color: #fff;
+        position:absolute;
+        right:0px;
+        transition:  0.5s ease;
+    }
+
+    .hamburger span:nth-child(1) {
+        top: 30px;
+        
+    }
+
+    .hamburger span:nth-child(2) {
+        top:40px;
+        
+    }
+
+    .hamburger span:nth-child(3) {
+        top: 50px;
+        
+    }
+
+    .hamburger.action span:nth-child(1) {
+        top:40px;
+        transform: rotate(45deg);
+
+    }
+    .hamburger.action span:nth-child(2),
+    .hamburger.action span:nth-child(3) {
+        top: 40px;
+        transform: rotate(-45deg);
+    }
+
+    .title-text .title  {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    
+
+    #service .content1{
+        flex-direction:column-reverse;
+    }
+
+    #service .content2 {
+        flex-direction: column;
+    }
+
+    #service .content1 img{
+        margin-right: 0;
+    }
+
+    #service .content2 img{
+        margin-left: 0px;
+    }
+    #service .contents .title-text {
+        margin-bottom: 40px;
+    }
+
+    #news ul {
+        flex-direction: column;
+    }
+
+    #news li {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #news li .text {
+        font-weight:bold;
+    }
+
+    .contact {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    
+
+    
+
+
+
+
+    
+} 
